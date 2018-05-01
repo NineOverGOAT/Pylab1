@@ -5,6 +5,24 @@ https://syslog-ng.org/
 
 syslog-ng listens on port 514 (TCP and UDP) for incoming syslog from other devices (you may need to run so-allow to allow traffic from the IP address of your syslog sender). This gives you basic log collection. If you'd like those logs collected from other devices to be analyzed, another option is to configure OSSEC to receive syslog directly on a port other than the syslog-ng port of 514:
 
+give up on that idea and install the ossec agent (it's easier)
+don't forget to go back to security onion and do the so-allow.
+
+...and do this:
+
+Managing Agents
+To add an agent to an OSSEC manager with manage_agents you need to follow the steps below.
+
+Run manage_agents on the OSSEC server.
+Add an agent.
+Extract the key for the agent.
+Copy that key to the agent.
+Run manage_agents on the agent.
+Import the key copied from the manager.
+Restart the manager’s OSSEC processes.
+Start the agent.
+
+
 -security onion 192.168.152.128
 -windoze  192.168.152.130
 
