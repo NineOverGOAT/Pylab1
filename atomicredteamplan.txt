@@ -26,4 +26,6 @@ Start the agent.
 -security onion 192.168.152.128
 -windoze  192.168.152.130
 
+https://github.com/Security-Onion-Solutions/security-onion/wiki/IntroductionToSecurityOnion
+
 2. test the regsrvr32 example
